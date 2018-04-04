@@ -46,6 +46,7 @@
  */
 
 
+// ------- Code à écrire / modifier ci-dessous -------
 
 function setObjectProp(/* ... */) {
 }
@@ -53,6 +54,7 @@ function setObjectProp(/* ... */) {
 const movie = {
 }
 
+// ---------------------------------------------------
 
 // Ne pas toucher ceci
 module.exports = {
