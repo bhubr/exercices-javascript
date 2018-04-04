@@ -5,7 +5,7 @@
  | On va écrire une fonction trierFilmsParGenre() qui à partir d'un
  | tableau de films, va construire un objet qui,
  | pour chaque genre, va contenir les NOMS des films
- | de ce genre.
+ | de ce genre. La fonction renvoie l'objet ainsi créé.
  | 
  | Par exemple, à partir du tableau de films suivant,
  | on voudrait obtenir un objet filmsParGenre contenant:
