@@ -1,4 +1,4 @@
-module.exports = [
+const moviesOrig = [
   {
     name: 'Star Wars Episode IV: A New Hope'
   },
@@ -9,3 +9,11 @@ module.exports = [
     name: 'Star Wars Episode IV: Return Of The Jedi'
   }
 ]
+
+module.exports = () => {
+  const movies = []
+  for(let m of moviesOrig) {
+    movies.push({ ...m })
+  }
+  return movies
+}

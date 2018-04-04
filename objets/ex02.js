@@ -22,8 +22,21 @@
  *----------------------------------------------*
  |
  | ENONCE:
- | Ajouter à CHAQUE objet du tableau movies les
- | propriétés suivantes:
+ | 1/ Ecrire une fonction setPropOnObjects qui prend
+ | trois arguments:
+ | - un tableau
+ | - un nom de propriété (clé)
+ | - une valeur pour cette propriété
+ | La fonction doit ajouter à CHAQUE objet du tableau
+ | la propriété donnée par les arguments clé et valeur.
+ | Elle doit renvoyer le tableau.
+ | TU PEUX UTILISER setObjectProp écrite dans l'exercice
+ | précédent (elle est inclue ici avec un require, pas
+ | besoin de copier coller)
+ | 
+ |
+ | 2/ En utilisant la fonction setPropOnObjects, ajouter
+ | à chaque objet du tableau movies les propriétés suivantes:
  |   genre         contenant "Science-fiction"
  |   author-name   contenant "George Lucas"
  |
@@ -31,20 +44,16 @@
  | Il faut donc utiliser la syntaxe appropriée
  */
 
-// PAS TOUCHE A CES QUELQUES LIGNES
-// !!!!!!!!!!
-const moviesOrig = require('./ex02movies')
-const movies = []
-for(let m of moviesOrig) {
-  movies.push({ ...m })
+// PAS TOUCHE
+const setObjectProp = require('./ex01').setObjectProp
+const movies = require('./ex02movies')()
+console.log(movies)
+
+// ------- Code à écrire / modifier ci-dessous -------
+
+function setPropOnObjects(/* ... */) {
 }
-// !!!!!!!!!!
-
-
-
-// Code à ajouter ci-dessous
-
 
 
 // Ne pas toucher ceci
-module.exports = movies
+module.exports = { setPropOnObjects, movies }

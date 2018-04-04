@@ -1,7 +1,7 @@
 const assert = require('assert')
 const checks = require('../../lib/checks')
-const arrOrig = require('../../objets/ex02movies')
-const arr = require('../../objets/ex02')
+const arrOrig = require('../../objets/ex02movies')()
+const { movies, setPropOnObjects } = require('../../objets/ex02')
 
 const arrOrigExpected = [
   {
