@@ -47,13 +47,11 @@
 
 
 
-function setObjectProp( /* ... */ ) {
-
+function setObjectProp(/* ... */) {
 }
 
 const movie = {
 }
-
 
 
 // Ne pas toucher ceci

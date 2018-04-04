@@ -10,8 +10,8 @@ describe('Objets - Exo 1 - Ecrire un objet', () => {
 
   it("setObjectProp écrit une propriété sur l'objet", () => {
     const obj = { foo: 'bar' }
-    const ret = setObjectProp(obj, 'dummy-prop', { dummy: 'value' })
-    assert.deepEqual({}, { foo: 'bar', dummy: 'value' })
+    const ret = setObjectProp(obj, 'dummy-prop', 'dummy-value')
+    assert.deepEqual(ret, { foo: 'bar', 'dummy-prop': 'dummy-value' })
   })
 
   it("La propriété 'name' existe et contient 'Star Wars Episode IV'", () =>
