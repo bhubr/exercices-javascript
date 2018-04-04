@@ -25,8 +25,19 @@
  *----------------------------------------------*
  |
  | ENONCE:
- | En partant de l'objet movie vide ci-dessous,
- | ajouter quatre propriétés à l'objet movie:
+ |
+ | 1/ Ecrire une fonction setObjectProp() qui prend
+ | trois arguments:
+ |   - un objet
+ |   - un nom de propriété (clé)
+ |   - une valeur pour la propriété
+ | La fonction doit ajouter une propriété à l'objet
+ | en utilisant la clé et la valeur.
+ | Elle doit renvoyer l'objet
+ |
+ | 2/ En partant de l'objet movie vide ci-dessous,
+ | ajouter quatre propriétés à l'objet movie, en
+ | utilisant la fonction setObjectProp():
  |   name          contenant "Star Wars Episode IV"
  |   genre         contenant "Science-fiction"
  |   release-year  contenant 1977
@@ -35,10 +46,17 @@
  */
 
 
+
+function setObjectProp( /* ... */ ) {
+
+}
+
 const movie = {
 }
 
 
 
 // Ne pas toucher ceci
-module.exports = movie
+module.exports = {
+  movie, setObjectProp
+}
