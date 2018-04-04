@@ -28,6 +28,8 @@
  */
 
 
+// ------- Code à écrire/modifier -----------
+
 function deleteObjectProp(/* ... */) {}
 
 const obj = {
@@ -37,6 +39,10 @@ const obj = {
   'pas-utile': "Il fait beau",
   'redondant': 'John Carpenter'
 }
+
+// --------------------------------------------
+
+
 
 
 // Ne pas toucher ceci

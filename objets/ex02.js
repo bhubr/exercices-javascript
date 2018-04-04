@@ -46,7 +46,7 @@
 
 // PAS TOUCHE
 const setObjectProp = require('./ex01').setObjectProp
-const movies = require('./ex02movies')()
+const movies = require('./ressources/ex02movies')()
 console.log(movies)
 
 // ------- Code à écrire / modifier ci-dessous -------
