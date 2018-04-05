@@ -8,18 +8,21 @@ Deux commandes pour installer les dépendances :
     sudo npm install -g mocha@4.1.0
 
 ## A propos
-Quelques exercices pour s'entraîner sur JavaScript.
 
-Pour l'instant ces exercices sont tous liés aux objets.
+Quelques exercices pour s'entraîner sur JavaScript. Les énoncés sont directement au-dessus du code.
 
-Les exercices sont dans le sous-répertoire `objets`. L'énoncé est directement au-dessus du code.
+Il y a plusieurs thèmes et plusieurs répertoires correspondants :
+
+* `bases`
+* `tableaux`
+* `objets`
 
 ## Lancer les exercices et les tests
 
-Pour lancer le code d'un exercice (ici avec le 1er exo):
+Pour lancer le code d'un exercice (ici avec le 1er exo de `bases`):
 
-    node objets/ex01.js
+    node bases/ex01.js
 
 Pour lancer le **test** qui vérifie le code d'un exercice, lancer :
 
-    mocha tests/objets/ex01.test.js
+    mocha tests/bases/ex01.test.js
