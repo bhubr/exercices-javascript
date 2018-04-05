@@ -1,5 +1,5 @@
 /*----------------------------------------------*
- | OBJETS / Exercice 1 / Ecrire un objet
+ | OBJETS / Exercice 1 / Ajouter des propriétés
  *----------------------------------------------*
  |
  | RAPPEL, un objet est un ensemble de
@@ -27,7 +27,8 @@
  | ENONCE:
  |
  | 1/ Ecrire une fonction setObjectProp() qui prend
- | trois arguments:
+ | trois arguments (remplacer le commentaire dans les
+ | parenthèses par les arguments) :
  |   - un objet
  |   - un nom de propriété (clé)
  |   - une valeur pour la propriété

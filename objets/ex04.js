@@ -5,7 +5,12 @@
  | On va écrire une fonction trierFilmsParGenre() qui à partir d'un
  | tableau de films, va construire un objet qui,
  | pour chaque genre, va contenir les NOMS des films
- | de ce genre. La fonction renvoie l'objet ainsi créé.
+ | de ce genre.
+ | La fonction prend un tableau en argument, et elle
+ | renvoie l'objet créé.
+ | Indice: la fonction renvoyant un objet, on va devoir
+ | déclarer un objet vide au début de la fonction,
+ | qu'on va "remplir" progressivement
  | 
  | Par exemple, à partir du tableau de films suivant,
  | on voudrait obtenir un objet filmsParGenre contenant:
@@ -31,6 +36,10 @@
  |
  */
 
+
+// ------- Code à écrire / modifier ci-dessous -------
+
+
 function trierFilmsParGenre(/*  */) {
 }
 
@@ -51,6 +60,8 @@ const films = [
 const filmsParGenre = trierFilmsParGenre(films)
 
 
+
+// ---------------------------------------------------
 
 
 module.exports = {
