@@ -44,6 +44,7 @@
 // --------------- Code à écrire/modifier ------------
 
 // Remplacer les /* ... */ par les paramètres
+
 function isNumber(/* ... */) {}
 function isString(/* ... */) {}
 function isBoolean(/* ... */) {}
