@@ -10,7 +10,7 @@ describe('Objets - Exo 2 - map()', () => {
 
   it("nomsComplets renvoie les valeurs attendues", () => {
     const tableauTest = [
-      { prenom: 'David', nom: 'Bowie'},
+      { prenom: 'David', nom: 'Bowie' },
       { prenom: 'John', nom: 'Lennon' }
     ]
     assert.deepEqual(
