@@ -1,6 +1,6 @@
 const assert = require('assert')
 const checks = require('../../lib/checks')
-const { anneesEntre } = require('../../boucles/ex01')
+const { anneesEntre } = require('../../boucles/ex05')
 
 describe('Boucles - Exo 1 - années entre', () => {
 

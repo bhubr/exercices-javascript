@@ -1,5 +1,5 @@
 /*----------------------------------------------*
- | BOUCLES / Exercice 1 / typeof
+ | BOUCLES / Exercice 5 / boucle for
  *----------------------------------------------*
  |
  | OBJECTIF: utiliser la boucle for "classique"
