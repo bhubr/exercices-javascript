@@ -1,4 +1,6 @@
-const sontDesNombres = require('../../tableaux/ex01')
+if(typeof global !== 'undefined') {
+  global.sontDesNombres = require('../../tableaux/ex01')
+}
 
 describe('Objets - Exo 1 - map()', () => {
 

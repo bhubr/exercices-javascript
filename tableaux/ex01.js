@@ -29,14 +29,13 @@
  | ENONCE
  |
  | PRE-REQUIS : avoir fait l'exercice bases/ex01.js
+ | ==> COPIER-COLLER la function isNumber ici
  |
  | Ecrire une fonction getType qui prend un tableau
  | d'entrée et renvoie pour chaque élément, true si
  | l'élément est une chaîne, et false sinon
  |
  */
-
-const { isNumber } = require('../bases/ex01')
 
 function sontDesNombres(tableau) {
 }
