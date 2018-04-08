@@ -49,6 +49,6 @@ const tableauTest = [
 
 console.log(sontDesNombres(tableauTest))
 
-module.exports = {
-  sontDesNombres
+if(typeof global !== 'undefined') {
+  module.exports = sontDesNombres
 }
