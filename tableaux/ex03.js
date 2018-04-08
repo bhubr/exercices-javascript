@@ -20,4 +20,6 @@ const starks = []
 
 // --------------- Code à écrire/modifier --------------
 
-module.exports = starks
+if(typeof global !== 'undefined') {
+  module.exports = starks
+}

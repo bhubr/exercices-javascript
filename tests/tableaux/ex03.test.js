@@ -1,6 +1,6 @@
-const assert = require('assert')
-const checks = require('../../lib/checks')
-const starks = require('../../tableaux/ex03')
+if(typeof global !== 'undefined') {
+  global.starks = require('../../tableaux/ex03')
+}
 
 describe('Objets - Exo 3 - push()', () => {
 
