@@ -1,6 +1,6 @@
 const assert = require('assert')
 const checks = require('../../lib/checks')
-const arrOrig = require('../../objets/ex02movies')()
+const arrOrig = require('../../objets/ressources/ex02movies')()
 const { movies, setPropOnObjects } = require('../../objets/ex02')
 
 const arrOrigExpected = [
@@ -11,7 +11,7 @@ const arrOrigExpected = [
     name: 'Star Wars Episode V: Empire Strikes Back'
   },
   {
-    name: 'Star Wars Episode IV: Return Of The Jedi'
+    name: 'Star Wars Episode VI: Return Of The Jedi'
   }
 ]
 

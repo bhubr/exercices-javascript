@@ -11,7 +11,8 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function nomsComplets(tableau) {
+  return tableau.map(element => `${element.prenom} ${element.nom}`)
 }
 
 

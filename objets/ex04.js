@@ -40,7 +40,23 @@
 // ------- Code à écrire / modifier ci-dessous -------
 
 
-function trierFilmsParGenre(/*  */) {
+let filmTries = {}
+function trierFilmsParGenre(tableau) {
+  const listeGenre = []
+  for(film of tableau) {
+    if(!listeGenre.includes(film.genre)) {
+      listeGenre.push(film.genre)
+    }
+  }
+  for(genre of listeGenre) {
+    filmTries[genre] = []
+    for(film of tableau) {
+      if(genre == film.genre) {
+        filmTries[genre].push(film)
+      }  
+    }
+  }
+  return filmTries
 }
 
 const films = [
@@ -58,6 +74,7 @@ const films = [
 ]
 
 const filmsParGenre = trierFilmsParGenre(films)
+console.log(filmsParGenre)
 
 
 

@@ -37,7 +37,18 @@
  |
  */
 
+let answer = []
+function isNumber(number) {
+  if(typeof number == "number") {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
 function sontDesNombres(tableau) {
+  return tableau.map(value => isNumber(value))
 }
 
 const tableauTest = [

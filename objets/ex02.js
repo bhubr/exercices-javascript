@@ -51,11 +51,13 @@ console.log(movies)
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setPropOnObjects(/* ... */) {
+function setPropOnObjects(table, key, value) {
+    return table.map(object => setObjectProp(object, key, value))
 }
 
 
-
+setPropOnObjects(movies, "genre", "Science-fiction")
+console.log(setPropOnObjects(movies, "author-name", "George Lucas"))
 // ---------------------------------------------------
 
 // Ne pas toucher ceci

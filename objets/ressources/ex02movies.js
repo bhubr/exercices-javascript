@@ -6,7 +6,7 @@ const moviesOrig = [
     name: 'Star Wars Episode V: Empire Strikes Back'
   },
   {
-    name: 'Star Wars Episode IV: Return Of The Jedi'
+    name: 'Star Wars Episode VI: Return Of The Jedi'
   }
 ]
 

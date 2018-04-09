@@ -49,11 +49,18 @@
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setObjectProp(/* ... paramètres ici ... */) {
+function setObjectProp(object, key, value) {
+  object[key] = value
+  return object
 }
 
-const movie = {
-}
+const movie = {}
+
+setObjectProp(movie, "name", "Star Wars Episode IV")
+setObjectProp(movie, "genre", "Science-fiction")
+setObjectProp(movie, "release-year", 1977)
+setObjectProp(movie, "main-actors", ["Mark Hamill", "Carrie Fisher", "Harrison Ford"])
+console.log(movie)
 
 // ---------------------------------------------------
 
