@@ -19,6 +19,10 @@
 const starks = []
 
 // --------------- Code à écrire/modifier --------------
+starks.push('Robb', 'Sansa', 'Arya', 'Bran', 'Rickon')
+
+console.log(starks)
+
 
 if(typeof global !== 'undefined') {
   module.exports = starks

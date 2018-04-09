@@ -19,3 +19,9 @@
  */
 
  // -------- Insère ton code ci-dessous --------
+
+ for (var i = 5; i > 0 ; i--) {
+ 	return i
+ 	} 
+
+ 	console.log(i)
