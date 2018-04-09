@@ -1,11 +1,16 @@
-const assert = require('assert')
-const checks = require('../../lib/checks')
-const { nomsComplets } = require('../../tableaux/ex02')
+if(typeof global !== 'undefined') {
+  global.nomsComplets = require('../../tableaux/ex02')
+}
 
 describe('Objets - Exo 2 - map()', () => {
 
   it("nomsComplets est une fonction", () => {
     assert.equal(typeof nomsComplets, 'function')
+  })
+
+  it("nomsComplets ne renvoie pas 'undefined'", () => {
+    const result = nomsComplets([])
+    assert.ok(result !== undefined, "nomsComplets renvoie 'undefined'");
   })
 
   it("nomsComplets renvoie les valeurs attendues", () => {
@@ -15,7 +20,7 @@ describe('Objets - Exo 2 - map()', () => {
     ]
     assert.deepEqual(
       nomsComplets(tableauTest),
-      ['David Bowie', 'John Lennon']
+      ['David Bowie', 'John Lennon'], "nomsComplets ne renvoie pas le résultat attendu"
     )
   })
 
