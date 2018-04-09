@@ -11,7 +11,9 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function nomsComplets(tableau) {
+	const resultat = tableau.map(personnage => personnage.prenom + ' ' + personnage.nom)
+	return resultat
 }
 
 
