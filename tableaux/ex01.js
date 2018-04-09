@@ -32,7 +32,7 @@
  |
  | Ecrire une fonction getType qui prend un tableau
  | d'entrée et renvoie pour chaque élément, true si
- | l'élément est une chaîne, et false sinon
+ | l'élément est un nombre, et false sinon
  |
  */
 const tableauTest = [
