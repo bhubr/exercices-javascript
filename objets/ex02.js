@@ -45,14 +45,23 @@
  */
 
 // PAS TOUCHE
-const setObjectProp = require('./ex01').setObjectProp
+function setObjectProp(objet, cle, valeur) {
+    objet[cle] = valeur
+    return objet
+  }  
 const movies = require('./ressources/ex02movies')()
-console.log(movies)
+
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setPropOnObjects(/* ... */) {
+function setPropOnObjects(tableau, cle, valeur) {
+    return tableau.map(item => setObjectProp(item, cle, valeur))
 }
+
+
+setPropOnObjects(movies, 'genre', 'Science-fiction')
+setPropOnObjects(movies, 'author-name', 'George Lucas')
+console.log(movies)
 
 
 

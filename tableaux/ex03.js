@@ -16,7 +16,16 @@
  | 5 noms : 'Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'
  */
 
+
+function creerTableau(tableau) {
+  tableau.push("Robb", "Sansa", "Arya", "Bran", "Rickon")
+  return tableau
+}
+
 const starks = []
+
+
+console.log(creerTableau(starks))
 
 // --------------- Code à écrire/modifier --------------
 

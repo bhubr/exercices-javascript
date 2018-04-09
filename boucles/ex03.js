@@ -15,3 +15,14 @@
  */
 
  // -------- Insère ton code ci-dessous --------
+
+ function chiffreDecroissant(tableau) {
+     for (let i = 30; i <= 60; i+=10) {
+        tableau.push(i)
+     }
+     return tableau
+ }
+
+ const table = []
+
+ console.log(chiffreDecroissant(table))

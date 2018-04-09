@@ -19,7 +19,7 @@
  |    'Star Wars Episode IV'
  |    'Star Wars Episode V',
  |    'Star Wars Episode VI',
- |    'Matrix',
+ |    'Matrix',console.log()
  |    'Blade Runner'
  |  ],
  |  Animation: [
@@ -39,8 +39,16 @@
 
 // ------- Code à écrire / modifier ci-dessous -------
 
+const creerObjet = {}
 
-function trierFilmsParGenre(/*  */) {
+function trierFilmsParGenre(tableauDObjets) {
+  for (let element of tableauDObjets) {
+    if (creerObjet[element.genre] === undefined) {
+      creerObjet[element.genre] = []
+    }
+    creerObjet[element.genre].push(element.nom)
+  }
+  return creerObjet
 }
 
 const films = [
@@ -59,6 +67,7 @@ const films = [
 
 const filmsParGenre = trierFilmsParGenre(films)
 
+console.log(filmsParGenre)
 
 
 // ---------------------------------------------------

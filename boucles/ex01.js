@@ -19,17 +19,13 @@
 
  // -------- Insère ton code ci-dessous --------
 
-function anneesEntre(d, f) {
-  const annee = [d]
-  for (let i = d; i < f; i++) {
-    annee.push(d += 1)
+function suiteDeNombres(tableau){
+  for (let i = 6; i <= 10; i++) {
+    tableau.push(i)
   }
-  return annee
+  return tableau
 }
 
-console.log(anneesEntre(2014, 2018))
-// Attendu: [ 2014, 2015, 2016, 2017, 2018 ]
+table = []
 
-module.exports = {
-  anneesEntre
-}
+console.log(suiteDeNombres(table))

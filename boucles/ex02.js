@@ -19,3 +19,14 @@
  */
 
  // -------- Insère ton code ci-dessous --------
+
+ function modifierTableau(tableau) {
+     for (let i = 5; i >= 0; i--) {
+         tableau.push(i)
+     }
+     return tableau
+ }
+
+const table = []
+
+ console.log(modifierTableau(table))

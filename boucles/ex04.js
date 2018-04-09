@@ -41,3 +41,14 @@
 ]
 
 // -------- Insère ton code ci-dessous --------
+
+function sortTable(tableau) {
+  const sort1 = []
+  const sort2 = []
+  for (let i = 0; i < 10 ; i++) {
+    i % 2 == 0 ? sort1.push(tableau[i]) : sort2.push(tableau[i])
+  }
+  return [sort1, sort2]
+}
+
+console.log(sortTable(charactersOfGoT))
