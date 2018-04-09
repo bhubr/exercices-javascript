@@ -14,6 +14,7 @@ Quelques exercices pour s'entraîner sur JavaScript. Les énoncés sont directem
 Il y a plusieurs thèmes et plusieurs répertoires correspondants :
 
 * `bases`
+* `boucles`
 * `tableaux`
 * `objets`
 

@@ -1,24 +1,19 @@
 /*----------------------------------------------*
- | BOUCLES / Exercice 1 / typeof
+ | BOUCLES / Exercice 1 / boucle for
  *----------------------------------------------*
  |
  | OBJECTIF: utiliser la boucle for "classique"
  |
- | SUBTILITE: contrairement à d'habitude on va
- | utiliser un autre indice de depart,
- | et une autre condition d'arrêt, que i = 0 et
- | i < quelqueChose.length
+ | EXEMPLE de boucle for, affichant les nombres
+ | de 0 à 4 :
  |
- | ENONCE:
- | Ecrire une fonction anneesEntre() qui prend
- | deux paramètres :
- |   - une année de début
- |   - une année de fin
- | Ces deux années définissent donc un intervalle.
+ | for(let i = 0 ; i < 5 ; i++) {
+ |   console.log(i)
+ | }
  |
- | La fonction doit renvoyer un tableau contenant
- | toutes les années entre celle de fin et celle de début,
- | en INCLUANT ces dernières
+ | ENONCE : en utilisant la boucle for, afficher les
+ | nombres de 6 à 10
+ | 
  */
 
 

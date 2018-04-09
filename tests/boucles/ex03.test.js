@@ -1,16 +1,16 @@
 const assert = require('assert')
 const catchConsole = require('../../lib/catchConsole')
 
-describe('Boucles - Exo 1 - for', () => {
+describe('Boucles - Exo 3 - for', () => {
 
-  it("affiche les nombres de 6 à 10", () => {
+  it("affiche les nombres de 5 à 0", () => {
     catchConsole.enable()
-    require('../../boucles/ex01')
+    require('../../boucles/ex03')
     const consoleOutput = console.getCatched()
     catchConsole.disable()
     const actual = consoleOutput.join('\n')
-    const expected = '6\n7\n8\n9\n10'
-    const expectedWithIndent = [6, 7, 8, 9, 10].map(l => '      ' + l)
+    const expected = '30\n40\n50\n60'
+    const expectedWithIndent = [30, 40, 50, 60].map(l => '      ' + l)
     .join('\n')
     assert.equal(actual, expected, `L'affichage est différent de:\n${expectedWithIndent}\n\n`)
   })
