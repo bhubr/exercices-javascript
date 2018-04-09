@@ -30,7 +30,10 @@
 
 // ------- Code à écrire/modifier -----------
 
-function deleteObjectProp(/* ... */) {}
+function deleteObjectProp(obj, key) {
+	delete obj[key]
+	return obj
+}
 
 const obj = {
   nom: 'John Carpenter',
@@ -39,6 +42,12 @@ const obj = {
   'pas-utile': "Il fait beau",
   'redondant': 'John Carpenter'
 }
+
+deleteObjectProp(obj, 'prop-bidon')
+deleteObjectProp(obj, 'pas-utile')
+deleteObjectProp(obj, 'redondant')
+console.log(obj)
+
 
 // --------------------------------------------
 

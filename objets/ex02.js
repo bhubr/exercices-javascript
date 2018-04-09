@@ -45,16 +45,28 @@
  */
 
 // PAS TOUCHE
-const setObjectProp = require('./ex01').setObjectProp
+function setObjectProp(obj, key, val) {
+	obj[key] = val
+		return obj
+}
 const movies = require('./ressources/ex02movies')()
 console.log(movies)
+console.log("")
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setPropOnObjects(/* ... */) {
+function setPropOnObjects(anArray, key, val) {
+	// const resultat = []
+	// return movies.push(setPropOnObjects)
+	for(item of anArray) {
+		setObjectProp(item, key, val)
+	}
 }
 
+setPropOnObjects(movies, 'genre', "Science-fiction")
+setPropOnObjects(movies, 'author-name', "George Lucas")
 
+console.log(movies)
 
 // ---------------------------------------------------
 

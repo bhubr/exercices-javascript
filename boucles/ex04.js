@@ -41,3 +41,9 @@
 ]
 
 // -------- Insère ton code ci-dessous --------
+for (i = 0; i < 10; i = i + 2) {
+  console.log(charactersOfGoT[i])
+}
+for (y = 1; y < 10; y = y + 2) {
+    console.log(charactersOfGoT[y])
+}

@@ -15,19 +15,8 @@
  | nombres de 6 à 10
  | 
  */
-
-
-function anneesEntre(d, f) {
-	const resultat = [d]
-  for (i = d; i < f; i++) {
-  	resultat.push(d += 1) 
-  }
-  return resultat
+for (i = 6; i <= 10; i++) {
+	console.log([i])
 }
 
-console.log(anneesEntre(2014, 2018))
-// Attendu: [ 2014, 2015, 2016, 2017, 2018 ]
 
-module.exports = {
-  anneesEntre
-}

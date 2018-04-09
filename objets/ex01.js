@@ -52,16 +52,17 @@
 
 // ------- Code à écrire / modifier ci-dessous -------
 function setObjectProp(obj, key, val) {
-	obj.name = name
-	key.name
+	obj[key] = val
+	return obj
 }
 
-function Movie(film, genre, date, acteurs) {
-	this.film = film
-	this.genre = genre
-	this.date = date
-	this.acteurs = acteurs
-}
+
+// function Movie(film, genre, date, acteurs) {
+// 	this.film = film
+// 	this.genre = genre
+// 	this.date = date
+// 	this.acteurs = acteurs
+// }
 
 // const movie = new Movie("Star Wars Episode IV", "Science-fiction", 1977, ["Mark Hamill", "Carrie Fisher", "Harrisson ford"])
 // console.log(movie)
@@ -70,8 +71,10 @@ const movie = {}
 setObjectProp(movie, 'name', 'Star Wars Episode IV')
 setObjectProp(movie, 'genre', 'Science-fiction')
 setObjectProp(movie, 'release-year', 1977)
-
+setObjectProp(movie, "main-actors", ["Mark Hamill", "Carrie fisher", "Harrisson Ford"])
+console.log(movie)
 // Attendu: { genre: 'Science-fiction' }
+
 
 // ---------------------------------------------------
 
