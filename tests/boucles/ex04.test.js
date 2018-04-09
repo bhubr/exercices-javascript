@@ -1,17 +1,15 @@
-const assert = require('assert')
-const catchConsole = require('../../lib/catchConsole')
-const fs = require('fs')
-const path = require('path')
-const sourcePath = path.normalize(`${__dirname}/../../boucles/ex04.js`)
-const source = fs.readFileSync(sourcePath).toString()
-
+if(typeof global !== 'undefined') {
+  catchConsole.enable(true)
+  require('../../boucles/ex04')
+  catchConsole.disable()
+}
 describe('Boucles - Exo 4 - for et tableaux', () => {
 
   it('affiche les prénoms', () => {
-    catchConsole.enable(true)
-    require('../../boucles/ex04')
-    const actual = console.getCatched()
-    catchConsole.disable()
+    // catchConsole.enable(true)
+    // require('../../boucles/ex04')
+    const actual = catchConsole.get()
+    // catchConsole.disable()
     const expected = [
       'Nom à l\'indice 0 Robb Stark',
       'Nom à l\'indice 2 Sansa Stark',
