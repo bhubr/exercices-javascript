@@ -29,14 +29,13 @@
  | ENONCE
  |
  | PRE-REQUIS : avoir fait l'exercice bases/ex01.js
+ | ==> COPIER-COLLER la function isNumber ici
  |
  | Ecrire une fonction getType qui prend un tableau
  | d'entrée et renvoie pour chaque élément, true si
  | l'élément est une chaîne, et false sinon
  |
  */
-
-const { isNumber } = require('../bases/ex01')
 
 function sontDesNombres(tableau) {
   const resultat = tableau.map(item => typeof item === 'number' ? true : false)
@@ -54,6 +53,6 @@ const tableauTest = [
 
 console.log(sontDesNombres(tableauTest))
 
-module.exports = {
-  sontDesNombres
+if(typeof global !== 'undefined') {
+  module.exports = sontDesNombres
 }

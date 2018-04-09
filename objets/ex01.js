@@ -34,7 +34,7 @@
  |   - une valeur pour la propriété
  | La fonction doit ajouter une propriété à l'objet
  | en utilisant la clé et la valeur.
- | Elle doit renvoyer l'objet
+ | !!! IMPORTANT !!! La fonction doit renvoyer l'objet
  |
  | 2/ En partant de l'objet movie vide ci-dessous,
  | ajouter quatre propriétés à l'objet movie, en
@@ -49,7 +49,7 @@
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setObjectProp(/* ... */) {
+function setObjectProp(/* ... paramètres ici ... */) {
 }
 
 const movie = {
@@ -58,6 +58,6 @@ const movie = {
 // ---------------------------------------------------
 
 // Ne pas toucher ceci
-module.exports = {
-  movie, setObjectProp
+if(typeof global !== 'undefined') {
+  module.exports = { movie, setObjectProp }
 }
