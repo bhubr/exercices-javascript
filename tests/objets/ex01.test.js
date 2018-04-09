@@ -1,11 +1,18 @@
-const assert = require('assert')
-const checks = require('../../lib/checks')
-const { movie, setObjectProp } = require('../../objets/ex01')
+if(typeof global !== 'undefined') {
+  const { movie, setObjectProp } = require('../../objets/ex01')
+  global.movie = movie
+  global.setObjectProp = setObjectProp
+}
 
 describe('Objets - Exo 1 - Ecrire un objet', () => {
 
   it("setObjectProp est une fonction", () => {
     assert.equal(typeof setObjectProp, 'function')
+  })
+
+  it("setObjectProp ne renvoie pas 'undefined'", () => {
+    const result = setObjectProp({}, 'foo', 'bar')
+    assert.ok(result !== undefined, "setObjectProp renvoie 'undefined'");
   })
 
   it("setObjectProp écrit une propriété sur l'objet", () => {

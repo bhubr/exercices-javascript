@@ -30,6 +30,6 @@ console.log(nomsComplets(personnagesGoT))
 
 // -----------------------------------------------------
 
-module.exports = {
-	nomsComplets
+if(typeof global !== 'undefined') {
+  module.exports = nomsComplets
 }
