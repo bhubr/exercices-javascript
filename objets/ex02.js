@@ -30,7 +30,7 @@
  | La fonction doit ajouter à CHAQUE objet du tableau
  | la propriété donnée par les arguments clé et valeur.
  | Elle doit renvoyer le tableau.
- | TU PEUX UTILISER setObjectProp écrite dans l'exercice
+ | TU PEUX COPIER-COLLER setObjectProp écrite dans l'exercice
  | précédent (elle est inclue ici avec un require, pas
  | besoin de copier coller)
  | 
@@ -49,7 +49,11 @@ function setObjectProp(obj, key, val) {
 	obj[key] = val
 		return obj
 }
-const movies = require('./ressources/ex02movies')()
+const movies = [
+  { name: 'Star Wars IV: A New Hope' },
+  { name: 'Star Wars V: Empire Strikes Back' },
+  { name: 'Star Wars VI: Return Of The Jedi' }
+]
 console.log(movies)
 console.log("")
 
