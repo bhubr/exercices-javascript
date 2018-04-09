@@ -15,7 +15,7 @@
  | Avec fonction anonyme en paramètre:
  |     const nombresDoubles = [1, 2, 3].map(x => 2 * x)
  |
- | Le résultat doit être [2, 3, 6]
+ | Le résultat doit être [2, 4, 6]
  |
  |
  | Avec fonction nommée en paramètre:
@@ -30,15 +30,26 @@
  |
  | PRE-REQUIS : avoir fait l'exercice bases/ex01.js
  | ==> COPIER-COLLER la function isNumber ici
+ function isNumber(nb) {
+	return typeof nb === 'number'
+	}
  |
  | Ecrire une fonction getType qui prend un tableau
  | d'entrée et renvoie pour chaque élément, true si
- | l'élément est une chaîne, et false sinon
+ | l'élément est une nombre, et false sinon
  |
  */
+ function isNumber(nb) {
+	return typeof nb === 'number'
+	}
 
 function sontDesNombres(tableau) {
+	return tableau.map(isNumber)
+
+	
 }
+
+
 
 const tableauTest = [
   1, 7, 'chaine', true, 9, 13, { nom: 'John' }

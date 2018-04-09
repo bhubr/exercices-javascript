@@ -11,8 +11,20 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function total(NoPre){
+	const nomprenom = NoPre.prenom + " " +NoPre.nom
+	return nomprenom
+
 }
+
+function nomsComplets(tableau){
+	 return tableau.map(total)
+}
+
+// function nomsComplets(tableau) {
+
+// 		return tableau.map(x=> `${x.prenom} ${x.nom}`)
+// }
 
 
 

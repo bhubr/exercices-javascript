@@ -21,9 +21,14 @@
  | en INCLUANT ces dernières
  */
 
-
+const tableAnnee = [];
 function anneesEntre(d, f) {
-  
+	for (let i = d; i <= f; i= i+ 1) {
+			
+		tableAnnee.push(i)
+		
+	}
+ return tableAnnee 
 }
 
 console.log(anneesEntre(2014, 2018))

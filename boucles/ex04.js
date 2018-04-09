@@ -39,5 +39,13 @@
   'Rickon Stark',
   'Tyrion Lannister'
 ]
+for (let i = 0 ; i <= 8; i=i +2) {
+  
+  console.log(i + " " + charactersOfGoT[i] )
+}
 
+for (let i = 1 ; i <= 9; i=i +2) {
+  
+  console.log(i + " " + charactersOfGoT[i] )
+}
 // -------- Insère ton code ci-dessous --------
