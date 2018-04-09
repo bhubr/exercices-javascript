@@ -23,7 +23,11 @@
 
 
 function anneesEntre(d, f) {
-  
+	const resultat = [d]
+  for (i = d; i < f; i++) {
+  	resultat.push(d += 1) 
+  }
+  return resultat
 }
 
 console.log(anneesEntre(2014, 2018))

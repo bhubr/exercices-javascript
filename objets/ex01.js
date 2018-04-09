@@ -38,7 +38,7 @@
  |
  | 2/ En partant de l'objet movie vide ci-dessous,
  | ajouter quatre propriétés à l'objet movie, en
- | utilisant la fonction setObjectProp():
+ | appelant PLUSIEURS FOIS la fonction setObjectProp():
  |   name          contenant "Star Wars Episode IV"
  |   genre         contenant "Science-fiction"
  |   release-year  contenant 1977
@@ -47,13 +47,31 @@
  */
 
 
+// obj.uneCle = 'Une valeur'
+// obj['une-autre-cle'] = 'Une autre valeur'
+
 // ------- Code à écrire / modifier ci-dessous -------
-
-function setObjectProp(/* ... */) {
+function setObjectProp(obj, key, val) {
+	obj.name = name
+	key.name
 }
 
-const movie = {
+function Movie(film, genre, date, acteurs) {
+	this.film = film
+	this.genre = genre
+	this.date = date
+	this.acteurs = acteurs
 }
+
+// const movie = new Movie("Star Wars Episode IV", "Science-fiction", 1977, ["Mark Hamill", "Carrie Fisher", "Harrisson ford"])
+// console.log(movie)
+
+const movie = {}
+setObjectProp(movie, 'name', 'Star Wars Episode IV')
+setObjectProp(movie, 'genre', 'Science-fiction')
+setObjectProp(movie, 'release-year', 1977)
+
+// Attendu: { genre: 'Science-fiction' }
 
 // ---------------------------------------------------
 
