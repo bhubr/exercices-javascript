@@ -49,11 +49,17 @@
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setObjectProp(/* ... paramètres ici ... */) {
-}
+function setObjectProp(objet,nomPropriete,valeurPropriete) {
+objet[nomPropriete] = valeurPropriete
+return objet
 
-const movie = {
 }
+ 
+
+const movie = { }
+ setObjectProp(movie, "name", 'Star Wars Episode IV')
+
+
 
 // ---------------------------------------------------
 
