@@ -15,3 +15,7 @@
  */
 
  // -------- Insère ton code ci-dessous --------
+
+ for (let i = 30; i < 70; i = i + 10){
+     console.log(i)
+ }

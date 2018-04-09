@@ -41,3 +41,10 @@
 ]
 
 // -------- Insère ton code ci-dessous --------
+
+for (i = 0 ; i < charactersOfGoT.length ; i = i + 2){
+  console.log(`Nom à l'indice ${[i]} ${charactersOfGoT[i]}`)
+}
+for (i = 1 ; i < charactersOfGoT.length ; i = i + 2){
+  console.log(`Nom à l'indice ${[i]} ${charactersOfGoT[i]}`)
+}

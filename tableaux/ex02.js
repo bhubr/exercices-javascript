@@ -11,7 +11,8 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function nomsComplets(array) {
+  return array.map(item => `${item.prenom} ${item.nom}`)
 }
 
 
