@@ -11,7 +11,9 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function nomsComplets(personnages) {
+  const nomEtPrenom = personnages.map(objet => objet.prenom +' '+ objet.nom)
+  return nomEtPrenom
 }
 
 

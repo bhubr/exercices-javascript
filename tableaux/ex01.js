@@ -39,7 +39,12 @@
 const { isNumber } = require('../bases/ex01')
 
 function sontDesNombres(tableau) {
+  const resultat = tableau.map(item => typeof item === 'number' ? true : false)
+  return resultat
 }
+
+
+
 
 const tableauTest = [
   1, 7, 'chaine', true, 9, 13, { nom: 'John' }
