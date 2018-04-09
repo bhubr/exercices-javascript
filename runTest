@@ -1,0 +1,3 @@
+#!/bin/sh
+TEST=$1
+mocha --require tests/bootstrap.js $TEST
