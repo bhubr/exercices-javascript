@@ -45,9 +45,34 @@
 
 // Remplacer les /* ... */ par les paramètres
 
-function isNumber(/* ... */) {}
-function isString(/* ... */) {}
-function isBoolean(/* ... */) {}
+function isNumber(nb) {
+  if (typeof nb === 'number') {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+function isString(word) {
+  if (typeof word === 'string') {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+
+
+function isBoolean(booleen) {
+  if (typeof booleen === 'boolean') {
+    return true
+  }
+  else {
+    return false
+  }
+}
 
 console.log('45 est un nombre ?', isNumber(45))                // Attendu: true
 console.log('37.2 est un nombre ?', isNumber(37.2))            // Attendu: true
