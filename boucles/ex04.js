@@ -41,3 +41,9 @@
 ]
 
 // -------- Insère ton code ci-dessous --------
+for (let i = 0; i <=8 ; i+=2){
+  console.log(i + " " + charactersOfGoT[i])
+}
+for (let j = 1; j <= 9 ; j+=2){
+  console.log(j + " " +charactersOfGoT[j])
+}

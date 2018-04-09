@@ -11,23 +11,21 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
-}
-
-
-
-// Exemple d'utilisation
 const personnagesGoT = [
   { prenom: 'Jon', nom: 'Snow' },
   { prenom: 'Arya', nom: 'Stark' },
   { prenom: 'Tyrion', nom: 'Lannister' }
 ]
-// Attendu : [ 'Jon Snow', 'Arya Stark', 'Tyrion Lannister' ]
-console.log(nomsComplets(personnagesGoT))
+function nomsComplets(noms) {
+	return noms.prenom +" "+noms.nom;
+}
+
+const persos = personnagesGoT.map(nomsComplets)
+console.log(persos)
 
 
 // -----------------------------------------------------
 
-if(typeof global !== 'undefined') {
-  module.exports = nomsComplets
+module.exports = {
+	nomsComplets
 }
