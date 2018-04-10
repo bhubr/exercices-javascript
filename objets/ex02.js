@@ -43,20 +43,34 @@
  | ATTENTION il est INTERDIT de modifier le contenu de ex02movies.js
  | Il faut donc utiliser la syntaxe appropriée
  */
+ function setObjectProp(objet,nomPropriete,valeurPropriete) {
+ objet[nomPropriete] = valeurPropriete
+ return objet
 
+ }
 // PAS TOUCHE
 const movies = [
   { name: 'Star Wars IV: A New Hope' },
   { name: 'Star Wars V: Empire Strikes Back' },
   { name: 'Star Wars VI: Return Of The Jedi' }
 ]
-console.log(movies)
+
 
 // ------- Code à écrire / modifier ci-dessous -------
 
-function setPropOnObjects(/* ... */) {
+function setPropOnObjects(tableau,nomPropriete,valeurPropriete) {
+
+	for( objet of tableau ){ 
+	setObjectProp(objet,nomPropriete,valeurPropriete)	
+	}
+	return tableau
 }
 
+
+
+ setPropOnObjects (movies, 'genre', ["Science-fiction"])
+ setPropOnObjects (movies, ['author-name'], "George Lucas")
+console.log(movies)
 
 
 // ---------------------------------------------------
