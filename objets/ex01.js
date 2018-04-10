@@ -61,6 +61,7 @@ setObjectProp(movie, 'genre', 'Science-fiction')
 setObjectProp(movie, 'release-year', '1977')
 setObjectProp(movie, 'main-actors', ['Mark Hamill', 'Carrie Fisher', 'Harrison Ford'])
 
+
 // console.log(movie)
 
 
