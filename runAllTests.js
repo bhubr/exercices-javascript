@@ -7,7 +7,7 @@ const Promise = require('bluebird')
 const { exec } = require('child_process')
 const execAsync = Promise.promisify(exec)
 const Git = require("nodegit")
-const students = require('./students.json')
+// const students = require('./students.json')
 
 const checkoutBranch = branchName => Git.Repository.open(".")
 .then(repo => repo.getBranch(`refs/heads/${branchName}`)
@@ -36,11 +36,15 @@ const runAllTests = () => Promise.reduce(
   []
 )
 
+// const runOnAllBranches =
 
-Promise.reduce(students, (results, stud) => {
-  const { name, branchName } = stud
-  console.log(`Running tests for ${name} => checkout branch ${branchName}`)
-  return checkoutBranch(branchName)
-  .then(runAllTests)
-  .then(res => console.log(stud, res))
-})
+// Promise.reduce(students, (results, stud) => {
+//   const { name, branchName } = stud
+//   console.log(`Running tests for ${name} => checkout branch ${branchName}`)
+//   return checkoutBranch(branchName)
+//   .then(runAllTests)
+//   .then(tests => results.concat([{ name, branchName, tests }]))
+// })
+
+runAllTests()
+.then(console.log)
