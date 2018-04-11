@@ -37,7 +37,7 @@ const getHtml = table => `
   <head>
     <meta charset="utf-8">
     <title>Test run</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <style>
     .ok {
       background: #7f7;
