@@ -5,6 +5,10 @@ const Promise = require('bluebird')
 const runAllTests = require('./runAllTests')
 const students = require('./students.json')
 
+const getCurrentBranch = () => Git.Repository.open(".")
+  .then(repo => repo.getCurrentBranch())
+  .then(ref => ref.name().split('/').pop())
+
 const checkoutBranch = branchName => Git.Repository.open(".")
 .then(repo => repo.getBranch(`refs/heads/${branchName}`)
   .then(ref => repo.checkoutRef(ref))
@@ -18,6 +22,10 @@ const runAllBranches = () =>
     .then(runAllTests)
     .then(tests => results.concat([{ name, branchName, tests }]))
   }, [])
+  .then(results => checkoutBranch)
 
-runAllBranches()
-.then(console.log)
+getCurrentBranch()
+.then(currentBranch => runAllBranches()
+  .then(results => console.log(results))
+  .then(() => checkoutBranch(currentBranch))
+)
