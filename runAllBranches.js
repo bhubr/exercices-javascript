@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 const Git = require("nodegit")
 const Promise = require('bluebird')
 const runAllTests = require('./runAllTests')
