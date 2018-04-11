@@ -3,6 +3,7 @@
 const Git = require("nodegit")
 const Promise = require('bluebird')
 const runAllTests = require('./runAllTests')
+const formatTestResults = require('./formatTestResults')
 const students = require('./students.json')
 
 const getCurrentBranch = () => Git.Repository.open(".")
@@ -23,8 +24,11 @@ const runAllBranches = () =>
     .then(tests => results.concat([{ name, branchName, tests }]))
   }, [])
 
+
 getCurrentBranch()
 .then(currentBranch => runAllBranches()
-  .then(results => console.log(results))
-  .then(() => checkoutBranch(currentBranch))
+  .then(results => checkoutBranch(currentBranch)
+    .then(() => formatTestResults(results))
+  )
 )
+.then(console.log)
