@@ -1,4 +1,5 @@
 const Git = require("nodegit")
+const Promise = require('bluebird')
 const runAllTests = require('./runAllTests')
 const students = require('./students.json')
 
