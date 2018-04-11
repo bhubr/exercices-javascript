@@ -22,7 +22,6 @@ const runAllBranches = () =>
     .then(runAllTests)
     .then(tests => results.concat([{ name, branchName, tests }]))
   }, [])
-  .then(results => checkoutBranch)
 
 getCurrentBranch()
 .then(currentBranch => runAllBranches()
