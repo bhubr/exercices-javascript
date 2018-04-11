@@ -27,4 +27,9 @@ const runAllTests = () =>
     )
   )
 
+if(process.argv[1].includes('runAllTests')) {
+  runAllTests()
+  .then(console.log)
+}
+
 module.exports = runAllTests
