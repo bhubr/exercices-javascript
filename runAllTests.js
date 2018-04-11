@@ -17,9 +17,15 @@ const runTest = f => execAsync(getCmd(f))
 .then(() => log(f, true))
 .catch(() => log(f, false))
 
+const stripWorkingDir = f => f.includes(__dirname) ?
+  f.substr(__dirname.length + 1) : f
+
 const runAllTests = () => 
   glob.readdirPromise('**/ex*.js')
-  .then(files => files.filter(f => /ex\d+\.js$/.test(f)))
+  .then(files => files
+    .filter(f => /ex\d+\.js$/.test(f))
+    .map(stripWorkingDir)
+  )
   .then(files => Promise.reduce(
       files, (c, file) => runTest(file)
         .then(status => c.concat([{ file, status }])),
@@ -29,7 +35,7 @@ const runAllTests = () =>
 
 if(process.argv[1].includes('runAllTests')) {
   runAllTests()
-  .then(console.log)
+  .then(() => console.log('DONE!'))
 }
 
 module.exports = runAllTests
