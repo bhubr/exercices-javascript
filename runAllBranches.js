@@ -17,7 +17,7 @@ const runAllBranches = () =>
     return checkoutBranch(branchName)
     .then(runAllTests)
     .then(tests => results.concat([{ name, branchName, tests }]))
-  })
+  }, [])
 
 runAllBranches()
 .then(console.log)
