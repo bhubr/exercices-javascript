@@ -1,7 +1,10 @@
 #!/usr/local/bin/node
 
 const Git = require("nodegit")
+const fs = require('fs')
 const Promise = require('bluebird')
+const writeAsync = Promise.promisify(fs.writeFile)
+
 const runAllTests = require('./runAllTests')
 const formatTestResults = require('./formatTestResults')
 const students = require('./students.json')
@@ -31,4 +34,4 @@ getCurrentBranch()
     .then(() => formatTestResults(results))
   )
 )
-.then(console.log)
+.then(html => writeAsync('results.html', html))
