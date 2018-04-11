@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "glob-fs": "^0.1.7",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "nodegit": "^0.22.0"
   }
 }
