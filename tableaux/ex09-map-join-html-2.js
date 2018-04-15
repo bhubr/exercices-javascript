@@ -15,13 +15,13 @@
 const theBeatles = [
   {
     name: 'John Lennon',
-    bio: 'Né le 9 octobre 1940 à Liverpool, John Lennon est mort le 8 décembre 1980 à l\'âge de 40 ans',
+    bio: 'Né le 9 octobre 1940 à Liverpool, John Lennon est mort le 8 décembre 1980 à l\'âge de 40 ans.',
     instrument: 'guitare',
     img: 'http://bit.do/beatles-john'
   },
   {
     name: 'Paul McCartney',
-    bio: 'Né le 18 juin 1942 à Liverpool, Paul McCartney est un artiste orienté rock aujourd\'hui âgé de 75 ans. ',
+    bio: 'Né le 18 juin 1942 à Liverpool, Paul McCartney est un artiste orienté rock aujourd\'hui âgé de 75 ans.',
     instrument: 'basse',
     img: 'http://bit.do/beatles-paul'
   },

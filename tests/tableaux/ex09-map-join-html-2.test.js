@@ -7,7 +7,7 @@ const expected = /* @html */ `<div class="media">
   <img class="mr-3" src="http://bit.do/beatles-john" alt="John Lennon">
   <div class="media-body">
     <h5 class="mt-0">John Lennon</h5>
-    Né le 9 octobre 1940 à Liverpool, John Lennon est mort le 8 décembre 1980 à l'âge de 40 ans
+    Né le 9 octobre 1940 à Liverpool, John Lennon est mort le 8 décembre 1980 à l'âge de 40 ans.
   </div>
 </div><div class="media">
   <img class="mr-3" src="http://bit.do/beatles-paul" alt="Paul McCartney">
