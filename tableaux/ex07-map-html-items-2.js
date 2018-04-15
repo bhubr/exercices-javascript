@@ -23,6 +23,7 @@
 
 // Une fonction slugify très simplifiée
 // Supprime les majuscules et remplace les espaces par des tirets -
+// Exemple d'appel: slugify('Jon Snow') renvoie jon-snow
 const slugify = name => name.toLowerCase().replace(/ /g, '-')
 
 
