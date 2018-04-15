@@ -30,10 +30,10 @@ console.log(`
 `)
 // Attendu:
 // [
-//   <li class="stone">Mick Jagger is a Rolling Stone</li>
-//   <li class="stone">Keith Richards is a Rolling Stone</li>
-//   <li class="stone">Ronnie Wood is a Rolling Stone</li>
-//   <li class="stone">Charlie Watts is a Rolling Stone</li>
+//   '<li class="stone">Mick Jagger is a Rolling Stone</li>',
+//   '<li class="stone">Keith Richards is a Rolling Stone</li>',
+//   '<li class="stone">Ronnie Wood is a Rolling Stone</li>',
+//   '<li class="stone">Charlie Watts is a Rolling Stone</li>'
 // ]
 console.log(stoneItems)
 

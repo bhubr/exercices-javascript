@@ -58,9 +58,7 @@ const makeBeatleListItem = beatle => `<li>
  * On peut appeler un .join() derrière le .map() pour obtenir une chaîne
  */
 const beatlesItemsHtml = theBeatles
-  .map(
-    beatle => makeBeatleListItem(beatle)
-  )
+  .map(makeBeatleListItem)
   .join('')
 
 console.log(`

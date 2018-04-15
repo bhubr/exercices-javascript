@@ -22,6 +22,7 @@
 // ------------- EXEMPLES, ne pas modifier ---------------
 
 // Une fonction slugify très simplifiée
+// Supprime les majuscules et remplace les espaces par des tirets -
 const slugify = name => name.toLowerCase().replace(/ /g, '-')
 
 
@@ -54,10 +55,10 @@ CODE - Génère un list item (li) avec la classe "stone" pour chaque Rolling Sto
 `)
 // Attendu:
 // [
-//   <li class="stone-0-mick-jagger">Mick Jagger is a Rolling Stone</li>
-//   <li class="stone-1-keith-richards">Keith Richards is a Rolling Stone</li>
-//   <li class="stone-2-ronnie-wood">Ronnie Wood is a Rolling Stone</li>
-//   <li class="stone-3-charlie-watts">Charlie Watts is a Rolling Stone</li>
+//   '<li class="stone-0-mick-jagger">Mick Jagger is a Rolling Stone</li>',
+//   '<li class="stone-1-keith-richards">Keith Richards is a Rolling Stone</li>',
+//   '<li class="stone-2-ronnie-wood">Ronnie Wood is a Rolling Stone</li>',
+//   '<li class="stone-3-charlie-watts">Charlie Watts is a Rolling Stone</li>'
 // ]
 console.log(stoneItems)
 
