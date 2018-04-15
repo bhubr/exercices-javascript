@@ -59,9 +59,9 @@ const getInitials = name => name
  *
  * D'abord, remplir la fonction getNameInitialsItem, dont le squelette t'est fourni.
  * C'est ici que tu vas utiliser getInitials().
- * getNameInitialsItem('John Travolta')  renverrait '<li>John Travolta (JT)</li>'
+ * getNameHtmlItem('John Travolta')  renverrait '<li>John Travolta (JT)</li>'
  */
-const getNameInitialsItem = name => `` // Remplace le CONTENU de `` PAR TON CODE
+const getNameHtmlItem = name => `` // Remplace le CONTENU de `` PAR TON CODE
 
 // Ensuite, utiliser la fonction ci-dessus de façon adéquate
 const physicistsHtml = ''  // REMPLACE '' PAR TON CODE
