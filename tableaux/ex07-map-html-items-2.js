@@ -38,7 +38,7 @@ EXEMPLE - Génère une div avec la classe "beatle", pour chaque Beatle du tablea
 console.log(beatlesDivs)
 
 console.log(`
-AIDE - Dans l'exemple suivant, tu vas avoir besoin de la fonction slugify fournie
+AIDE - Dans l'exercice suivant, tu vas avoir besoin de la fonction slugify fournie
 `)
 const someString = 'Once upon a time'
 console.log(`Conversion de "${someString}" en slug: ${ slugify(someString) }`)
