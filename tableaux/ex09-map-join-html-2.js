@@ -1,5 +1,5 @@
 /*----------------------------------------------*
- | TABLEAUX / Exercice 9 / map()
+ | TABLEAUX / Exercice 9 / map() et join()
  *----------------------------------------------*
  |
  | OBJECTIF: Combiner map() et join() pour obtenir,

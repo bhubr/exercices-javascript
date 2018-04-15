@@ -29,7 +29,7 @@ const expected = /* @html */ `<div class="media">
   </div>
 </div>`
 
-describe('Tableaux - Exo 9 - map() suivi de join() pour générer du HTML', () => {
+describe('Tableaux - Exo 11 - map() suivi de join() pour générer du HTML', () => {
 
   it("- beatlesMediaObjectsHtml contient le HTML composé des 4 media objects (un par Beatle)", () => {
     assert.equal(beatlesMediaObjectsHtml, expected)

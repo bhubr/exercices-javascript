@@ -3,7 +3,7 @@ if(typeof global !== 'undefined') {
   global.physicistsHtml = physicistsHtml
 }
 
-describe('Tableaux - Exo 9 - map() et join() pour obtenir une chaîne', () => {
+describe('Tableaux - Exo 9 - map() et join() pour générer du HTML', () => {
 
   it("- physicistsHtml est une string", () => {
     assert.equal(typeof physicistsHtml, 'string')
