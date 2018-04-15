@@ -3,9 +3,12 @@
  *----------------------------------------------*
  |
  | OBJECTIF: utiliser split() avec le bon séparateur
- | La méthode split() appliquée sur une chaîne,
+ |
+ | RESUME: La méthode split() appliquée sur une chaîne,
  | la découpe suivant un séparateur, et renvoie
  | un tableau contenant les "morceaux".
+ |
+ | REFERENCE: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/split
  |
  | ENONCE: après l'exemple, deux exercices, consistant
  | à découper la chaîne avec le bon séparateur

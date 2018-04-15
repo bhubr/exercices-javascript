@@ -2,8 +2,8 @@
  | CHAINES / Exercice 2 / méthode split()
  *----------------------------------------------*
  |
- | OBJECTIF: utiliser split() avec le bon séparateur,
- | avec des séparateurs contenant plusieurs caractères
+ | OBJECTIF: utiliser split() avec des séparateurs
+ | contenant plusieurs caractères
  |
  */
 
