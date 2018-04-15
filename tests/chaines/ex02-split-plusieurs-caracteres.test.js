@@ -30,6 +30,6 @@ describe('Chaines - Exo 2 - Split avec séparateur à plusieurs caractères', ()
   })
 
   it("- singersArray contient des noms de chanteurs et aucune chaîne vide", () => {
-    assert.deepEqual(singersArray, [ 'Goat', 'Cow', 'Cat', 'Dog', 'Pig' ])
+    assert.deepEqual(singersArray, [ 'Sting', 'Madonna', 'Prince', 'Eminem', 'Adele' ])
   })
 })
