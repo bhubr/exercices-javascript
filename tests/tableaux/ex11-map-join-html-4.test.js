@@ -1,6 +1,6 @@
 if(typeof global !== 'undefined') {
   const { beatlesMediaObjectsHtml } =
-    require('../../tableaux/ex09-map-join-html-2')
+    require('../../tableaux/ex11-map-join-html-4')
   global.beatlesMediaObjectsHtml = beatlesMediaObjectsHtml
 }
 const expected = /* @html */ `<div class="media">
