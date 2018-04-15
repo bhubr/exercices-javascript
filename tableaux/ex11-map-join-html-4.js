@@ -73,13 +73,13 @@ console.log(beatlesItemsHtml)
   * Voici la chaîne dont tu dois t'inspirer, issue de la doc du media object de Bootstrap 4
   * (la source, mais tu n'en as pas besoin: https://getbootstrap.com/docs/4.0/layout/media-object/)
 
-      <div class="media">
-        <img class="mr-3" src="..." alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-        </div>
-      </div>
+<div class="media">
+  <img class="mr-3" src="..." alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+  </div>
+</div>
 
   * On te donne le squelette de la fonction makeBeatlesMediaObject(), qui reçoit
   * comme argument un objet "Beatle". La fonction doit renvoyer une chaîne HTML

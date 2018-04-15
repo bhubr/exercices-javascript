@@ -47,20 +47,21 @@ const movies = [
 
 /**
  * ENONCE: inspire-toi de l'exemple et utilise le tableau movies,
- * pour obtenir la chaîne suivante.
+ * pour obtenir la chaîne suivante. Respecte le saut de ligne après la fermeture
+ * de chaque ligne...
 
-    <div id="movie-1">
-      <h4>Heat</h4>
-      <p>Heat was released in 1995 and was directed by Michael Mann
-    </div>
-    <div id="movie-1">
-      <h4>Heat</h4>
-      <p>Heat was released in 1995 and was directed by Michael Mann
-    </div>
-    <div id="movie-1">
-      <h4>Heat</h4>
-      <p>Heat was released in 1995 and was directed by Michael Mann
-    </div>
+<div id="movie-1">
+  <h4>Heat</h4>
+  <p>Heat was released in 1995 and was directed by Michael Mann
+</div>
+<div id="movie-2">
+  <h4>Snatch</h4>
+  <p>Snatch was released in 2000 and was directed by Guy Ritchie
+</div>
+<div id="movie-3">
+  <h4>Unforgiven</h4>
+  <p>Unforgiven was released in 1992 and was directed by Clint Eastwood
+</div>
 
 */
 
@@ -70,6 +71,11 @@ const getMovieDiv = movie => ``  // Remplace le CONTENU des `` par ton code
 
 // Puis utilise cela pour obtenir la liste des div jointe dans une chaîn
 const movieListHtml = ''  // REMPLACE '' par ton code
+
+console.log(`\n\n
+EXERCICE - Génère une liste de films en HTML à partir d'un tableau d'OBJETS
+`)
+console.log(movieListHtml)
 
 if(typeof global !== 'undefined') {
   module.exports = { movieListHtml }
