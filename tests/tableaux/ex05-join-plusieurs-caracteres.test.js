@@ -12,6 +12,6 @@ describe('Tableaux - Exo 5 - Join avec séparateur/glue à plus d\'un caractère
   })
 
   it('- moviesString contient les noms des films, un sur chaque ligne, préfixé de "* " ', () => {
-    assert.ok(moviesString === '* The Matrix\n* Interstellar\n* Avatar\n* Alien')
+    assert.ok(`* ${moviesString}` === '* The Matrix\n* Interstellar\n* Avatar\n* Alien')
   })
 })
