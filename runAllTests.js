@@ -6,7 +6,7 @@ const { exec } = require('child_process')
 const execAsync = Promise.promisify(exec)
 
 // Get test command
-const getCmd = test => `mocha --require tests/bootstrap.js tests/${test.replace('.js', '.test.js')}`
+const getCmd = test => `mocha --require tests/bootstrap tests/${test.replace('.js', '.test.js')}`
 
 const log = (f, status) => {
   console.log(`${f}: ${ status ? 'OK': 'Fail' }`)
@@ -20,10 +20,12 @@ const runTest = f => execAsync(getCmd(f))
 const stripWorkingDir = f => f.includes(__dirname) ?
   f.substr(__dirname.length + 1) : f
 
-const runAllTests = () => 
+const runAllTests = () =>
   glob.readdirPromise('**/ex*.js')
   .then(files => files
-    .filter(f => /ex\d+\.js$/.test(f))
+    .filter(f => /ex\d+(\-[-a-z0-9]+)?\.js$/.test(f))
+    .filter(f => ! f.endsWith('.test.js'))
+    // .map(f => console.log(f))
     .map(stripWorkingDir)
   )
   .then(files => Promise.reduce(
