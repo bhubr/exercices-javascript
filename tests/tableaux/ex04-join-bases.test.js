@@ -1,7 +1,7 @@
 if(typeof global !== 'undefined') {
   const { moviesString, albumsString, maryPoppinsString, htmlListString } =
     require('../../tableaux/ex04-join-bases')
-  global.moviesString = albumsString
+  global.moviesString = moviesString
   global.albumsString = albumsString
   global.maryPoppinsString = maryPoppinsString
   global.htmlListString = htmlListString
