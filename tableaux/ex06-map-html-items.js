@@ -26,7 +26,7 @@ const theStones = ['Mick Jagger', 'Keith Richards', 'Ronnie Wood', 'Charlie Watt
 const stoneItems = [] // REMPLACER [] par ton code
 
 console.log(`
-  EXEMPLE - Génère un list item (li) avec la classe "stone" pour chaque Rolling Stone du tableau
+  CODE - Génère un list item (li) avec la classe "stone" pour chaque Rolling Stone du tableau
 `)
 // Attendu:
 // [
