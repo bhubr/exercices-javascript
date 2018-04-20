@@ -23,7 +23,11 @@
 
 
 function anneesEntre(d, f) {
-  
+	const tableau = []
+  	for (let i = d; i <= f; i++) {
+  		tableau.push(i)
+  	}
+	 return tableau
 }
 
 console.log(anneesEntre(2014, 2018))

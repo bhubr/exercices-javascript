@@ -11,7 +11,8 @@
 
 
 // --------------- Code à écrire/modifier --------------
-function nomsComplets() {
+function nomsComplets(tableau) {
+	const resultat = objet.map(objet =>)
 }
 
 

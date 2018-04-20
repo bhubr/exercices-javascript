@@ -16,7 +16,9 @@
  | 5 noms : 'Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'
  */
 
-const starks = []
+const starks = [];
+starks.push('Robb', 'Sansa', 'Arya', 'Bran', 'Rickon')
+console.log(starks)
 
 // --------------- Code à écrire/modifier --------------
 

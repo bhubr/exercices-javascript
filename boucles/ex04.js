@@ -41,3 +41,12 @@
 ]
 
 // -------- Insère ton code ci-dessous --------
+
+
+for (let i = 0; i < 9 ; i += 2) {
+console.log(`Nom à l'indice ${i} ${charactersOfGoT[i]}`)
+}
+
+for (let i = 1; i < 10 ; i += 2) {
+console.log(`Nom à l'indice ${i} ${charactersOfGoT[i]}`)
+}

@@ -15,3 +15,7 @@
  */
 
  // -------- Insère ton code ci-dessous --------
+
+for (i = 30; i <=60; i+=10) {
+	console.log(i)
+}
