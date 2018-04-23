@@ -26,4 +26,4 @@ Pour lancer le code d'un exercice (ici avec le 1er exo de `bases`):
 
 Pour lancer le **test** qui vérifie le code d'un exercice, lancer :
 
-    mocha tests/bases/ex01.test.js
+    ./runTest tests/bases/ex01.test.js
